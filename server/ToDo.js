@@ -1,6 +1,4 @@
-// DB0 = Account
-// DB1 = Manga
-// DB2 = LightNovels
-// DB3 = Merch
+// db pass = dQH7x6YJUA70g3qB
 
 
+// use session or passport

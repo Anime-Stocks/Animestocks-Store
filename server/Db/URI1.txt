@@ -1,0 +1,1 @@
+mongodb+srv://animestcks:dQH7x6YJUA70g3qB@cluster0.pzlji3t.mongodb.net/AnimeStocks-Store?retryWrites=true&w=majority
