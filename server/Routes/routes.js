@@ -9,8 +9,8 @@ router.use('/Login', (req, res, next) => {
     next();
 });
 
-router.get('/adomino', authenticateUser, (req,res) => {
-    res.redirect("/?");//idk where
+router.post('/Login', authenticateUser, (req,res) => {
+    res.redirect('/addWhat')//to the choices
 });
 
 router.post('/addManga', addManga);

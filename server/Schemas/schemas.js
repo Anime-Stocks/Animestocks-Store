@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const db1 = require('../Db/database');
 
+
 const adminSchema = new mongoose.Schema({
     username: {
         type: String,
