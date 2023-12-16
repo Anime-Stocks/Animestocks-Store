@@ -3,17 +3,17 @@ const { Admin, Manga, Light, Merch } = require("../Schemas/schemas");
 
 exports.authenticateUser = async (req, res, next) => {
     var username = req.body.username;
-    var pass = req.body.password;
+    var password = req.body.password;
 
     console.log(req.body);
     // { username: 'adomino', pass: 'holyadomino' }
 
     try {
-        const admin = await Admin.findOne({ username: username, pass: pass });
+        const admin = await Admin.findOne({ username: username, password: password });
         if (admin) {
             next();
         } else {
-            console.log(`Log in failed for username: "${username}" & password: "${pass}"`);
+            console.log(`Log in failed for username: "${username}" & password: "${password}"`);
             res.status(401).send("Unauthorized");
         }
     } catch (error) {

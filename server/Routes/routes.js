@@ -12,17 +12,17 @@ const { authenticateUser, addManga, addLightNovel, addMerch, getManga, getLightN
 
 router.post('/authenticate', authenticateUser);
 
-// router.get("/test", (req, res) => {
-//     res.json({ message: "Hello from server!" });
-// })
+router.get("/test", (req, res) => {
+    res.json({ message: "Hello from server!" });
+})
 
 // router.post('/addManga', addManga);
 // router.post('/addLightNovel', addLightNovel);
 // router.post('/addMerch', addMerch);
 
-// router.get('/Manga', getManga);
-// router.get('/LightNovel', getLightNovel);
-// router.get('/Merch', getMerch);
+// router.get('/manga', getManga);
+// router.get('/lightnovel', getLightNovel);
+// router.get('/merch', getMerch);
 
 
 module.exports = router;

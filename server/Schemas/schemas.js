@@ -56,11 +56,11 @@ const adminSchema = new mongoose.Schema({
         type: String,
         unique: true,
     },
-    pass: String,
+    password: String,
 });
 
 const Admin = db1.model("Admin", adminSchema);
 
 module.exports = {
-    Admin,
+    Admin
 };
