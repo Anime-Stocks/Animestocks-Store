@@ -8,8 +8,7 @@
         "start": "node server",
         "dev": "nodemon server"
     },
-    "author": "Bermar Villarazo Jr.",
-    "contributor": "KellyCu", 
+    "author": "Bermar Villarazo Jr. || Kelly Cu",
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",

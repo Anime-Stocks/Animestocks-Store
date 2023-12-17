@@ -12,7 +12,7 @@ const { authenticateUser, addManga, addLightNovel, addMerch, getManga, getLightN
 
 router.post('/authenticate', authenticateUser, (req,res) => {
     console.log("Authentication middleware succeeded");
-    res.status(200).json({ message: "Authorized" });
+    res.status(200).json({ redirectTo: "/addWhat" });
 });
 
 router.get("/test", (req, res) => {

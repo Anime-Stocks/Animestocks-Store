@@ -12,7 +12,7 @@ const adminSchema = new mongoose.Schema({
 const mangaSchema = new mongoose.Schema({
     name: String,
     link: String,
-    class: String,
+    cat: String,
     image: String,
     description: String,
     price: Number
@@ -21,7 +21,7 @@ const mangaSchema = new mongoose.Schema({
 const lightSchema = new mongoose.Schema({
     name: String,
     link: String,
-    class: String,
+    cat: String,
     image: String,
     description: String,
     price: Number
