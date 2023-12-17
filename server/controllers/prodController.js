@@ -1,20 +1,19 @@
 // CONTROLLER
 const { Admin, Manga, Light, Merch } = require("../Schemas/schemas");
 
-exports.authenticateUser = async (req, res, next) => {
-    var username = req.body.username;
-    var password = req.body.password;
-
-    console.log(req.body);
-    // { username: 'adomino', pass: 'holyadomino' }
+exports.authenticateUser = async (req, res) => {
+    const { username, password } = req.body;
 
     try {
-        const admin = await Admin.findOne({ username: username, password: password });
+        const admin = await Admin.findOne({ username, password });
         if (admin) {
-            next();
+            console.log(`Log in successful for username: "${username}" & password: "${password}"`);
+            console.log("Authorized");
+            res.redirect("/addWhat");
         } else {
             console.log(`Log in failed for username: "${username}" & password: "${password}"`);
-            res.status(401).send("Unauthorized");
+            res.status(401).json({ message: "Unauthorized" });
+            console.log("Unauthorized");
         }
     } catch (error) {
         console.error("Error in authentication:", error);
