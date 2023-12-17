@@ -9,6 +9,7 @@
         "dev": "nodemon server"
     },
     "author": "Bermar Villarazo Jr.",
+    "contributor": "KellyCu", 
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.5",
